@@ -9,16 +9,29 @@
     body {
       font-family: 'Segoe UI', sans-serif;
     }
+  
     .hero {
       background: linear-gradient(120deg, #4facfe, #00f2fe);
       color: white;
       padding: 80px 0;
       text-align: center;
     }
+  
     .case-study img {
       height: 180px;
-      object-fit: cover;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-bottom: 1px solid #ddd;
     }
+  
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
     footer {
       background-color: #f8f9fa;
       padding: 20px 0;
@@ -73,34 +86,36 @@
   <div class="container">
     <h2>Case Studies</h2>
     <div class="row">
-      <div class="col-md-3 case-study">
-        <div class="card">
-          <a href="https://stephen1567.github.io/quickcut/"><img src="quickcut.jpg" class="card-img-top" alt="Service Site"></a>
-          <div class="card-body text-center">
-            <a href="https://stephen1567.github.io/quickcut/" class="btn btn-outline-primary">View Page</a>
+      <div class="col-md-3 case-study mb-4">
+        <div class="card h-100">
+          <a href="https://stephen1567.github.io/quickcut/">
+            <img src="img/quickcut.jpg" class="card-img-top" alt="Service Site">
+          </a>
+          <div class="card-body d-flex flex-column justify-content-end text-center">
+            <a href="https://stephen1567.github.io/quickcut/" class="btn btn-outline-primary mt-auto">View Page</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 case-study">
-        <div class="card">
+      <div class="col-md-3 case-study mb-4">
+        <div class="card h-100">
           <a href="game.html"><img src="img/game.jpg" class="card-img-top" alt="Game Design"></a>
-          <div class="card-body text-center">
+          <div class="card-body d-flex flex-column justify-content-end text-center">
             <a href="game.html" class="btn btn-outline-primary">View Page</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 case-study">
-        <div class="card">
+      <div class="col-md-3 case-study mb-4">
+        <div class="card h-100">
           <a href="ecommerce.html"><img src="img/ecommerce.jpg" class="card-img-top" alt="E-Commerce"></a>
-          <div class="card-body text-center">
+          <div class="card-body d-flex flex-column justify-content-end text-center">
             <a href="ecommerce.html" class="btn btn-outline-primary">View Page</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 case-study">
-        <div class="card">
+      <div class="col-md-3 case-study mb-4">
+        <div class="card h-100">
           <a href="analytics.html"><img src="img/analytics.jpg" class="card-img-top" alt="Analytics"></a>
-          <div class="card-body text-center">
+          <div class="card-body d-flex flex-column justify-content-end text-center">
             <a href="analytics.html" class="btn btn-outline-primary">View Page</a>
           </div>
         </div>
